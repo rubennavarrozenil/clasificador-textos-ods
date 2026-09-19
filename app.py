@@ -57,7 +57,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background: linear-gradient(180deg, #f5faf9 0%, #f8fafc 42%, #ffffff 100%);
+        background: var(--background-color);
     }
     .block-container {
         max-width: 1180px;
@@ -65,7 +65,7 @@ st.markdown(
         padding-bottom: 3rem;
     }
     .eyebrow {
-        color: #0f766e;
+        color: var(--primary-color);
         font-size: 0.82rem;
         font-weight: 700;
         letter-spacing: 0.12em;
@@ -73,7 +73,7 @@ st.markdown(
         margin-bottom: 0.4rem;
     }
     .hero-title {
-        color: #102a43;
+        color: var(--text-color);
         font-size: clamp(2.15rem, 4vw, 3.55rem);
         line-height: 1.06;
         font-weight: 760;
@@ -81,7 +81,8 @@ st.markdown(
         margin: 0;
     }
     .hero-copy {
-        color: #526779;
+        color: var(--text-color);
+        opacity: 0.78;
         font-size: 1.08rem;
         line-height: 1.7;
         max-width: 760px;
@@ -115,8 +116,8 @@ st.markdown(
         margin: 0;
     }
     div[data-testid="stMetric"] {
-        background: rgba(255, 255, 255, 0.86);
-        border: 1px solid #dbe7e5;
+        background: var(--secondary-background-color);
+        border: 1px solid rgba(127, 127, 127, 0.25);
         border-radius: 14px;
         padding: 0.9rem 1rem;
     }
